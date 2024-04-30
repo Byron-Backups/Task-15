@@ -1,0 +1,91 @@
+<!--L3T15-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../index.js" defer></script>
+    <link rel="stylesheet" href="../CSS/events.css">
+</head>
+
+<body>
+    <h1>Welcome to the JS Events practice.</h1>
+    <h2>Please read the description box, and then choose the correct asnwer.</h2>
+    <br>
+    
+    <!--Main code here:-->
+    <section id="events_section">
+        
+        <p>
+            Here is a quick recap:
+        </p>
+
+        <p id="recap_events">
+            Events are like the reactions of an html page when it has javascript attached to it.<br>
+            This can be anything from a cool animation when a button is clicked on,<br>
+            to tracking your location and ip address using session cookies when you load a webpage.<br>
+            <br>
+            There are different types of events such as:<br>
+            Global, Window, Form, Keyboard, Mouse, Drag, Clipboard and Media events.<br>
+            <br>
+            Here are a few examples:<br>
+        </p>
+        <!-- This is a list of example events. -->
+        <ul id="event_egs">
+            <li>onchange - Some HTML element has been modified</li>
+            <li>onclick - An HTML element has been clicked on</li>
+            <li>onmouseover - An HTML element was hovered over</li>
+            <li>onmouseout - Mouse cursor moves off HTML element</li>
+            <li>onkeydown - A keyboard button is pressed</li>
+            <li>onload - The HTML page has finished loading</li>
+        </ul>
+        <p>
+            These can also be built into function and or called from functions of your own design!<br>
+            Example:
+        </p>
+
+        <!-- This is example code for the question below. -->
+        <pre><code class="language-javascript">
+            function yourFunction(maybeAnInput) {
+                onclick("such and such");
+                onkeypress("such and such");
+            }
+        </code></pre>
+        <br>
+        <p>
+            The user clicks a button and said button has an event attached to it.<br>
+            What would that event listener be?<br>
+        </p>
+        <!-- This is a multiple choice question using radio buttons. -->
+        <form action="" id="event_choice">
+            <label  for ="event_4">ondblclick</label>
+            <input  type="radio" id="event_4" name="event_choice"><br>
+            <label  for ="event_1">ondragend</label>
+            <input  type="radio" id="event_1" name="event_choice"><br>
+            <label  for ="event_3">onkeydown</label>                    <!--Answer-->
+            <input  type="radio" id="event_3" name="event_choice"><br>  <!--Answer-->
+            <label  for ="event_2">oncuechange</label>
+            <input  type="radio" id="event_2" name="event_choice"><br>
+            <br>
+            <button type="reset"  id="btnreset" value="Reset">Reset</button>
+        </form>
+    </section>
+
+    <br>
+    <p id="events_sources">
+        List of sources:<br>
+        <a href="https://www.w3schools.com/js/js_events.asp">            JavaScript Events     </a><br>
+        <a href="https://www.w3schools.com/tags/ref_eventattributes.asp">HTML Event Attributes </a><br>
+    </p>
+
+    <p>
+        <a href="index.html">Back to Homepage.</a>
+    </p>
+</body>
+
+</html>
+
+<!--End.-->

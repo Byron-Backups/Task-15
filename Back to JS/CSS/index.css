@@ -1,0 +1,43 @@
+/*L3T15.*/
+input, textarea {
+    margin-top: 10px;
+}
+
+#res_type input {
+    margin-right: 20px;
+}
+
+.space {
+    height: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#res_type label {
+    font-weight: normal;
+}
+
+body {
+    text-align: center;
+    color: whitesmoke;
+    background-image: url(../Images/1x8ye3z.jpg);
+    background-repeat: repeat;
+    background-position: top center;
+}
+
+a {
+    color: rgb(121, 121, 255);
+    font-size: 130%;
+}
+ 
+h1 {
+    padding-top: 30px;
+}
+
+h2 {
+    padding-bottom: 40px;
+}
+
+/*End.*/

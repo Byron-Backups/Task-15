@@ -1,0 +1,71 @@
+/*L3T15.*/
+input, textarea {
+    margin-top: 10px;
+}
+
+#res_type input {
+    margin-right: 20px;
+}
+
+.space {
+    height: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#res_type label {
+    font-weight: normal;
+}
+
+body {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 130%;
+    background-image: url(../Images/1301526.png);
+    background-attachment: fixed; /*Keep the background image still when scrolling.*/
+    background-size: cover;
+}
+
+#syntax_section {
+    display:inline-block;
+    border-radius: 25px;
+    background-color: rgba(72, 104, 192, 0.255);
+}
+
+#syntax_sources {
+    display:inline-block;
+    border-radius: 10px;
+    background-color: rgb(46, 33, 35);
+}
+
+#li_funcs {
+    text-align: left;
+}
+
+#li_funcs {
+    text-align: center;
+    list-style-type: none;
+}
+
+a {
+    color: rgb(121, 121, 255);
+    font-size: 110%;
+}
+
+code {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid rgb(100, 240, 217);
+    padding: 5px;
+    background-color: rgb(154, 161, 154);
+    border-radius: 10px;
+    text-align: start;
+    white-space: pre-wrap;
+    color: rgb(12, 0, 46);
+}
+
+/*End.*/

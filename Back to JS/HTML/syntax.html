@@ -1,0 +1,266 @@
+<!--L3T15-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Basic Syntax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../index.js" defer></script>
+    <link rel="stylesheet" href="../CSS/syntax.css">
+</head>
+
+<body>
+    <h1>Welcome to the JS syntax practice.</h1>
+    <h2>Please read the description box, and then choose the correct asnwer.</h2>
+    <br>
+    
+    <!--Main code here:-->
+    <section id="syntax_section">
+        
+        <p>
+            Here is a quick recap:
+        </p>
+        
+        <p id="recap_variables">
+            Variables:<br>
+            Defined with 'let' and 'const'.<br>
+            Eg; 'let myVariable = 4;'  or  'const myConstant = 3.14;'<br>
+            'let' can have its value changed while 'const' stays constant.<br>
+            <br>
+        </p>
+
+        <!-- A question based on the top paragrpah, and then a multiple choice form below. -->
+        <p>
+            Say a user wanted to define the birthday of a person. What variable definition would they use?
+        </p>
+        <form action="submit" id="syntax_choice_vars">
+            <label  for ="syntax_var_1">let:</label>
+            <input  type="radio" id="syntax_var_1" name="syntax_choice_vars"><br>
+            <label  for ="syntax_var_4">var :</label>
+            <input  type="radio" id="syntax_var_4" name="syntax_choice_vars"><br>
+            <label  for ="syntax_var_2">const:</label>                              <!---->
+            <input  type="radio" id="syntax_var_2" name="syntax_choice_vars"><br>   <!--answer-->
+            <label  for ="syntax_var_3">constant :</label>
+            <input  type="radio" id="syntax_var_3" name="syntax_choice_vars"><br>
+            <br>
+            <button type="reset"  value="Reset">Reset</button>
+        </form>
+        <br>
+        
+        <!-- An explanation of conditionals followed by example code. -->
+        <p id="recap_conditionals">
+            Conditional statements:<br>
+            'if', 'else if' and 'else'.<br>
+            These have '()' round brackets after the 'if' and 'else if'<br>
+            that hold the conditions that need to be met such as<br>
+            'if(myVariable == true)' or 'else if(myVariable == 6)'.<br>
+            After the condition, you have curly brackets '{}' that house what needs to be done. Eg:<br>
+        </p>
+        <!-- Exmaple code. -->
+        <pre><code class="language-javascript">
+            if(myVariable == true) {
+                console.log("Message is true.");}
+            else {
+                console.log("Message is not true.");
+            }
+        </code></pre>
+        <p>
+            The 'else if' and 'else' can be used to add more conditions.
+        </p>
+        <br>
+
+        <!-- Example code and then a question followed by a multiple choice form. -->
+        <pre><code class="language-javascript">
+            if( carIsParked == true) {
+                ask user for their car parking spot number;
+            } else {
+                tell user they need to park their car;
+            }
+        </code></pre>
+        <p>
+            This conditional checks if the user:
+        </p>
+        <form action="submit" id="syntax_choice_ifs">
+            <label  for ="syntax_con_3">Owns a car:</label>
+            <input  type="radio" id="syntax_con_3" name="syntax_choice_ifs"><br>
+            <label  for ="syntax_con_4">Has parked their car:</label>
+            <input  type="radio" id="syntax_con_4" name="syntax_choice_ifs"><br>    <!--answer-->
+            <label  for ="syntax_con_1">Has flowers for valentines day:</label>
+            <input  type="radio" id="syntax_con_1" name="syntax_choice_ifs"><br>
+            <label  for ="syntax_con_2">Has pocket money for the weekend:</label>
+            <input  type="radio" id="syntax_con_2" name="syntax_choice_ifs"><br>
+            <br>
+            <button type="reset"  value="Reset">Reset</button>
+        </form>
+        <br>
+        
+
+        <!-- An explanation on arrays and loops. -->
+        <p id="recap_arrays">
+            Arrays and loops:<br>
+            An array holds multiple variables for us, such as names or numbers or even our own custom classes.<br>
+            The first index of an array is zero (0), but is counted as one (1) when we ask how many slots are in the array.<br>
+            Eg; 'let myArrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];'<br>
+            So the number '9' would be at index 8, but there are 9 slots in the array. I know, I know... <br>
+            Loops can be 'for' or 'while'.<br>
+            'for' loops run FOR each number of times you tell it to,<br>
+            while 'while' loops run WHILE there is a condition that is true. Eg;<br>
+        </p>
+
+        <!-- Example code of a 'for' and 'while' loop, and then a question followed by a multiple choice form. -->
+        <pre><code class="language-javascript">
+            for (i = 0; i < 10; i++) {
+                printing out 'i' will count to ten.
+            }
+            while(something == true) {
+                this will repeat until that something becomes false.
+            }
+        </code></pre>
+        <br>
+        <form action="submit" id="syntax_choice_loop">
+            <p>
+                Which is the correct format for a 'for' loop?
+            </p>
+            <label  for ="syntax_loop_2">for(i = 1; i < limit; +):</label>
+            <input  type="radio" id="syntax_loop_2" name="syntax_choice_loop"><br>
+            <label  for ="syntax_loop_3">for(i is 1; i < limit; +):</label>
+            <input  type="radio" id="syntax_loop_3" name="syntax_choice_loop"><br>
+            <label  for ="syntax_loop_4">for(i = 1; i < limit; ++):</label>
+            <input  type="radio" id="syntax_loop_4" name="syntax_choice_loop"><br>  <!--Answer-->
+            <label  for ="syntax_loop_1">for(i is 1; i < limit; ++):</label>
+            <input  type="radio" id="syntax_loop_1" name="syntax_choice_loop"><br>
+            <br>
+            <button type="reset"  value="Reset">Reset</button>
+        </form>
+        <br>
+
+        <!-- An explanation on maps. -->
+        <p id="recap_maps">
+            Maps:<br>
+            A map is like an array from earlier, but the big difference is that every item has an index name,<br>
+            and then a value attached to that specific index. Eg;
+        </p>
+        <!-- Example code of how to use a Map to store data, and an explanation. -->
+        <pre><code class="language-javascript">
+            let treasureMap = new Map();
+            treasureMap.set("index-1", "this is where my first treasure is buried");
+            treasureMap.set("index-2", "this is where my second treasure is buried");
+        </code></pre>
+            
+        <p>
+            Now if we want to know where our treasure is, we go to our Map and call for<br>
+            the index with either 'index-1' or 'index-2' to get our respective values;<br>
+        </p>
+        <br>
+    
+        <!-- Example code of how to use a Map to store data, and a question followed by a multiple choice form. -->
+        <pre><code class="language-javascript">
+            let myNewMap = new Map();
+            myNewMap.set("the quiver", "where green arrow has his hideout.");
+            myNewMap.set("scpd lab", "where the flash has his hideout.");
+            myNewMap.set("fortress of solitude", "where superman spends his quiet time.");
+        </code></pre>
+
+        <p>
+            You want to add the location of the Batcave, how would you do it?
+        </p>
+        <form action="submit" id="syntax_choice_maps">
+            <label  for ="syntax_map_1">new Map(); new batcaveMap;</label>
+            <input  type="radio" id="syntax_map_1" name="syntax_choice_maps"><br>
+            <label  for ="syntax_map_3">myNewMap.set("The Batcave", "Where Batman spends his nights.");</label><!--Answer-->
+            <input  type="radio" id="syntax_map_3" name="syntax_choice_maps"><br>                             <!--Answer-->
+            <label  for ="syntax_map_4">myNewMap.add("The Batcave", "Where Batman spends his nights.");</label>
+            <input  type="radio" id="syntax_map_4" name="syntax_choice_maps"><br>
+            <label  for ="syntax_map_2">myNewMap.delete("The Batcave", "Where Batman spends his nights.");</label>
+            <input  type="radio" id="syntax_map_2" name="syntax_choice_maps"><br>
+            <br>
+            <button type="reset"  value="Reset">Reset</button>
+        </form>
+        <br>
+
+        <!-- An explanation on functions. -->
+        <p id="recap_functions">
+            Functions:<br>
+            There are pre-made function that we can use, and even our own custom made ones.<br>
+            Some pre-made:<br>
+        </p>
+        <!-- A list of some pre-made functions. -->
+        <ul id="li_funcs">
+            <li>charAt()      - returns a character in a string at the given index</li>
+            <li>indexOf()     - returns the index of a the first occurrence of a character in a string</li>
+            <li>split()       - splits a string into an array of substrings</li>
+            <li>toUpperCase() - returns the given string all in upper case</li>
+        </ul>
+
+        <!-- An example of a custom made function. -->
+        <p>
+            For our own we would use:<br>
+            'function myFunctionName() {<br>
+                let myVariable = abc;<br>
+                whatever you want abc to do.<br>
+                return abc;}'
+        </p>
+        <br><br>
+            
+        <!-- A question, example code and then a multiple choice form. -->
+        <p id="q_func">
+            Here is a funtion that gets a response from Q based on an input.<br>
+        </p>
+        <pre><code class="language-javascript">
+            function ask_Q(ui) {
+                if(ui = 1) {
+                    return "13 flavours instead of 12. I knew it!";
+                }
+                else if(ui = 2) {
+                    return "Not \"conspiracies\". Conspiracy. Singular.";
+                }
+                else if(ui = 3) {
+                    return "What do you think?
+                            We're asking questions someone doesn't want answered.";
+                }
+                else if(ui = 4) {
+                    return "Now THAT is the question.";
+                }
+            }
+        </code></pre>
+
+        <p>
+            What would 'ui' need to be equal to in order to get the response from Q: "Not 'conspiracies'. Conspiracy. Singular." ?
+        </p>
+        <form action="submit" id="syntax_choice_function">
+            <label  for ="syntax_fun_1">ui = 1:</label>
+            <input  type="radio" id="syntax_fun_1" name="syntax_choice_function"><br>
+            <label  for ="syntax_fun_2">ui = 2:</label>                               <!--Answer-->
+            <input  type="radio" id="syntax_fun_2" name="syntax_choice_function"><br> <!--Answer-->
+            <label  for ="syntax_fun_3">ui = 3:</label>
+            <input  type="radio" id="syntax_fun_3" name="syntax_choice_function"><br>
+            <label  for ="syntax_fun_4">ui = 4:</label>
+            <input  type="radio" id="syntax_fun_4" name="syntax_choice_function"><br>
+            <br>
+            <button type="reset"  value="Reset">Reset</button>
+        </form>
+    </section>
+    <br>
+
+    <!-- Our sources. -->
+    <p id="syntax_sources">
+        List of sources:<br>
+        <a href="https://www.w3schools.com/js/js_syntax.asp">   JS syntax.      </a><br>
+        <a href="https://www.w3schools.com/js/js_variables.asp">JS variables.   </a><br>
+        <a href="https://www.w3schools.com/js/js_if_else.asp">  JS conditionals.</a><br>
+        <a href="https://www.w3schools.com/js/js_arrays.asp">   JS Arrays.      </a><br>
+        <a href="https://www.w3schools.com/js/js_maps.asp">     JS Maps.        </a><br>
+        <a href="https://www.w3schools.com/js/js_functions.asp">JS functions.   </a><br>
+    </p>
+    <br>
+
+    <p>
+        <a href="index.html">Back to Homepage.</a>
+    </p>
+</body>
+
+</html>
+
+<!--End.-->

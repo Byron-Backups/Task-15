@@ -1,0 +1,68 @@
+/*L3T15.*/
+input, textarea {
+    margin-top: 10px;
+}
+
+#res_type input {
+    margin-right: 20px;
+}
+
+.space {
+    height: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#res_type label {
+    font-weight: normal;
+}
+
+body {
+    text-align: center;
+    font-size: 130%;
+    color: whitesmoke;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(116, 116, 116, 0.2)), url(../Images/bg-2.png);
+    background-blend-mode: multiply, normal;
+    background-attachment: fixed; /*Keep the background image still when scrolling.*/
+    background-size: cover;
+}
+
+#events_section {
+    display:inline-block;
+    border-radius: 25px;
+    background-color: rgba(33, 44, 16, 0.774);
+}
+
+#event_egs {
+    text-align: left;
+}
+
+#events_sources {
+    display:inline-block;
+    border-radius: 10px;
+    background-color: rgb(46, 33, 35);
+    border-width: 10px;
+}
+
+code {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid rgb(184, 72, 8);
+    padding: 5px;
+    background-color: rgb(161, 154, 154);
+    border-radius: 10px;
+    text-align: start;
+    white-space: pre-wrap;
+    color: rgb(12, 0, 46);
+}
+
+a {
+    color: rgb(121, 121, 255);
+    font-size: 110%;
+}
+
+/*End.*/

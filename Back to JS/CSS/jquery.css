@@ -1,0 +1,59 @@
+/*L3T15.*/
+input, textarea {
+    margin-top: 10px;
+}
+
+.space {
+    height: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+body {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 130%;
+    background-image: url(../Images/1300189.jpg);
+    background-attachment: fixed; /*Keep the background image still when scrolling.*/
+    background-size: cover;
+    background-position: top center;
+}
+
+#jquery_section {
+    display:inline-block;
+    border-radius: 25px;
+    background-color: rgba(47, 79, 79, 0.87);
+}
+
+#jquery_sources {
+    display:inline-block;
+    border-radius: 10px;
+    background-color: rgb(46, 33, 35);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(121, 121, 255);
+    font-size: 110%;
+}
+
+code {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid rgb(184, 101, 33);
+    padding: 5px;
+    background-color: rgb(161, 154, 154);
+    border-radius: 10px;
+    text-align: start;
+    white-space: pre-wrap;
+    color: rgb(12, 0, 46);
+}
+
+/*End.*/

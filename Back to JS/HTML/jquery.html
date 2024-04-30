@@ -1,0 +1,201 @@
+<!--L3T15-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../index.js" defer></script>
+    <link rel="stylesheet" href="../CSS/jquery.css">
+</head>
+
+<body>
+    <h1>Welcome to the JS JQuery practice.</h1>
+    <h2>Please read the description box, and then choose the correct asnwer.</h2>
+    <br>
+    
+    <!--Main code here:-->
+    <section id="jquery_section">
+        
+        <p>
+            Here is a quick recap:
+        </p>
+        
+        
+        <!-- This is an explanation of jquesry and some of the features in a list. -->
+        <p id="recap_jquery">
+            jQuery is a JavaScript library that makes it easier to <br>
+            manipulate the HTML of a page after it's displayed by the browser.<br>
+            It also provides tools that allow a page to listen for user interaction, create<br>
+            animations and lets you communicate with a server without reloading the page.<br>
+            jQuery code can be denoted with either 'jquery' or '$' before an element selection.<br>
+            Eg:<br>
+            var listItems = jQuery( 'li' );<br>
+            var listItems = $( 'li' );<br>
+            <br>
+            The jQuery library contains the following features:
+        </p>
+        <ul id="li_jquery_recap">
+            <li>AJAX</li>
+            <li>Utilities</li>
+            <li>CSS manipulation</li>
+            <li>HTML event methods</li>
+            <li>Effects and animations</li>
+            <li>HTML/ DOM manipulation</li>
+        </ul>
+        
+        <!-- This is just some cool colour and an explanation. -->
+        <p>
+            <span style="color: chocolate;">JQuery also has a wide array of plugins available, and works with almost all major browsers!</span><br>
+            <br>
+            Functions:<br>
+            You can make your own jquery function. Eg;<br>
+        </p>
+
+        <!-- This is example code of a function. -->
+        <pre><code class="language-javascript">
+            $(function(){
+                //jQuery events and effects go here.
+            });
+        </code></pre>
+        <br>
+        <!-- This is an explanation of selectors and ways to use them. -->
+        <p>
+            Selectors:<br>
+            You can use jquery to select any and all html elements. Eg;<br>
+            <br>
+            $(".yellow") - class selector<br>
+            $("#mainHeading") - ID selector<br>
+            $("h1") - element heading selector<br>
+            $("*") - selects all HTML elements<br>
+            $(this) - selects current HTML element<br>
+            $("[href]") // selects all link-based elements<br>
+            <br><br>
+
+            Creating and appending elements:<br>
+            Create a new paragraph:<br>
+        </p>
+
+        <!-- This is example code of a function that appends a new paragraph in jquery. -->
+        <pre><code class="language-javascript">
+            let newParagraph = $("< p>< /p>"").text
+                ("This is a new paragraph.");
+        </code></pre>
+        <br>
+        <p>
+            This appends newParagraph to the end of the body element:
+        </p>
+        <pre><code class="language-javascript">
+            $("body").append(newParagraph);
+        </code></pre>
+        <br>
+
+        <!-- Common scripting files used in jquery. -->
+        <p>
+            Separate Scripting Files:<br>
+            This is the code used to create a scripting file<br>
+            incorporating jQuery (placed in the html 'head'):<br>
+            >script <br>
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"><br>
+            /script><br>
+            script src="script.js"> /script>
+        </p>
+        <br>
+
+        <!-- This is some events and effects and a list of examples of each for multiple peripherals. -->
+        <p>
+            Events and effects:<br>
+            Here are some common events in jQuery:<br>
+            <br>
+        </p>
+        <ul id="li_jquery_events">
+            <li>Mouse events:</li>
+            <ul>
+                <li>Click</li>
+                <li>Mouse enter</li>
+                <li>Double click</li>
+            </ul>
+            <br>
+
+            <li>Keyboard events:</li>
+            <ul>
+                <li>Key up</li>
+                <li>Key down</li>
+                <li>Key press</li>
+            </ul>
+            <br>
+
+            <li>Form events:</li>
+            <ul>
+                <li>blur</li>
+                <li>submit</li>
+                <li>change</li>
+            </ul>
+        </ul>
+        <br>
+
+        <!-- The Effect and Chaining section. -->
+        <p>
+            Effect chaining:<br>
+            Effects can be applied multiple times to multiple items using jquery.<br>
+            Some common effects in jQuery:
+        </p>
+        <!-- A list of Effects. -->
+        <ul>
+            <li>Slide - Slides the element</li>
+            <li>Hide - Hides the selected element</li>
+            <li>Fade - Fades the element in or out</li>
+            <li>Show - Reveals the selected element</li>
+            <li>Stop - Stops any effect of an element</li>
+            <li>Animate - Animates some property of the element</li>
+        </ul>
+        
+        <p>
+            Here is some code that changes the colour of a button and makes it slide up and down.
+        </p>
+        <!-- Some example code that uses Chaining. -->
+        <pre><code class="language-javascript">
+            $("button").css("color", "green")
+                .slideDown(200).slideUp(200);
+        </code></pre>
+        <br>
+
+        <!-- This is a question that tests your knowledge on the hide/ show effects. -->
+        <p>
+            I want to hide all elements on my webpage that are large headings - < h1>.<br>
+            What would that code look like?<br>
+        </p>
+        <form action="submit" id="jquery_choice">
+            <label  for ="jq_1">$("p").hide();</label>
+            <input  type="radio" id="jq_1" name="jquery_choice"><br>
+            <label  for ="jq_4">$("h1").stop();</label>
+            <input  type="radio" id="jq_4" name="jquery_choice"><br>
+            <label  for ="jq_3">$("h1").hide();</label>               <!--Answer-->
+            <input  type="radio" id="jq_3" name="jquery_choice"><br>  <!--Answer-->
+            <label  for ="jq_2">$("headings").hide();</label>
+            <input  type="radio" id="jq_2" name="jquery_choice"><br>
+            <br>
+            <button type="reset"  value="Reset">Reset</button>
+        </form>
+    </section>
+    <br>
+
+    <!-- Sources. -->
+    <p id="jquery_sources">
+        List of sources:<br>
+        <a href="https://www.w3schools.com/jquery/jquery_intro.asp"> jQuery Introduction  </a><br>
+        <a href="http://jqfundamentals.com/chapter/jquery-basics/">  jQuery Basics        </a><br>
+        <a href="https://www.w3schools.com/jquery/default.asp">      jQuery Tutorial      </a><br>
+        <a href="https://www.geeksforgeeks.org/jquery-introduction/">jQuery | Introduction</a><br>
+    </p>
+
+    <p>
+        <a href="index.html">Back to Homepage.</a>
+    </p>
+</body>
+
+</html>
+
+<!--End.-->
